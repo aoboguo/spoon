@@ -100,9 +100,11 @@ get "/bigspoons/:name" do |name|
 
 	big_spoons = [backpack, pusher, goliath, crescent]
 
+
 	big_spoons.each do |info|
 		if "#{name}" == info[:spoon_name].split.last.downcase
 		 @description = info[:description]
+		 @spooning_name = info[:spoon_name]
 		end
 	end
 	
@@ -118,9 +120,11 @@ get "/littlespoons/:name" do |name|
 
 	little_spoons = [crusher, monster, shapeshifter, collector]
 
+
 	little_spoons.each do |info|
 		if "#{name}" == info[:spoon_name].split.last.downcase
 		 @description = info[:description]
+		 @spooning_name = info[:spoon_name]
 		end
 	end
 	
