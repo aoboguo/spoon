@@ -131,3 +131,14 @@ get "/littlespoons/:name" do |name|
 	
 	erb :indiv_spoons
 end
+
+
+get "/whatisspoon" do
+	"Spooning is the act of two or more people and/or objects lying down, facing the same direction in a spoon-like position, with minimal space between the participants. Spooning was invented to bring peace and harmony to the universe."
+
+erb :whatisspoon
+end
+
+
+
+
